@@ -10,6 +10,14 @@ Turma: **CC 3A / manhã**
 
 ---
 
+Os exercícios já possuem testes embutidos, que usam o `assert` do Python.
+
+Para executar o algoritmo de corte de toras: `python3 corte_toras.py`
+
+Para executar o algoritmo de transporte de pedras: `python3 transporte-pedras.py`
+
+---
+
 ## Orientações:
 > Apenas as funções range() e len(), e o método .append(), podem ser usadas nas implementações;
 
