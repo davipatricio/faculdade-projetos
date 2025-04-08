@@ -1,14 +1,12 @@
 def transportar_pedras(num_pedras, capacidade_caminhao):
-    # pedras onde cada uma tem peso 1kg maior que a anterior 
-    pedras = list(range(1, num_pedras + 1))
-    # inverte a lista de pedras para começar com as mais pesadas
-    pedras.reverse()
+    # Cria lista de pedras com pesos de 1 até num_pedras (1kg maior que a anterior)
+    pedras = list(range(num_pedras, 0, -1))  # já vem invertida (mais pesadas primeiro) (10,9,8,7,...n)
+    nova_pedras = []
     num_deslocamentos = 0
 
-    while len(pedras) > 0:
+    while pedras:
         num_deslocamentos += 1
         capacidade_atual = 0
-        nova_pedras = []
 
         for peso in pedras:
             if capacidade_atual + peso <= capacidade_caminhao:
@@ -16,8 +14,8 @@ def transportar_pedras(num_pedras, capacidade_caminhao):
             else:
                 nova_pedras.append(peso)
 
-        pedras = nova_pedras
-
+        pedras, nova_pedras = nova_pedras, []
+    
     return num_deslocamentos
 
 
