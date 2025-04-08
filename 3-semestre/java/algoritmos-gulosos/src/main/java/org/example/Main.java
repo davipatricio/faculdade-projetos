@@ -2,11 +2,9 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-//        int viagens = Main.transportarPedras(5,10);
         int[][] testes = {{5,10}, {10, 100}, {10,10}};
 
         for (int[] teste : testes) {
