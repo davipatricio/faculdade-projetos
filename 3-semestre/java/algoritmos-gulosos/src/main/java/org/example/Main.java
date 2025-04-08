@@ -2,40 +2,51 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Main {
-    public static void main(String[] args) {
-        Main.transportarPedras(5,10);
+    public static void main(String[] args) throws Exception {
+//        int viagens = Main.transportarPedras(5,10);
+        int[][] testes = {{5,10}, {10, 100}, {10,10}};
+
+        for (int[] teste : testes) {
+            int pedras = teste[0];
+            int capacidade = teste[1];
+            int viagens = Main.transportarPedras(pedras, capacidade);
+
+            System.out.printf("%s pedras em um caminhão com capacidade de %skg, serão necessárias: %s viagens.\n", pedras, capacidade, viagens);
+
+        }
     }
 
-    public static void transportarPedras(int numPedras, int capacidadeCaminhao) {
-        List<Integer> pedras = new ArrayList<Integer>();
-
-        for (int nPedra = 0; nPedra<numPedras; nPedra++) {
-            pedras.add(nPedra+1);
+    public static int transportarPedras(int numPedras, int capacidadeCaminhao) throws Exception {
+        if (numPedras > capacidadeCaminhao) {
+            throw new Exception("O caminhão não conseguirá transportar todas as pedras.");
         }
 
-        pedras = pedras.reversed();
-
         int deslocamentos = 0;
+        List<Integer> pedras = new ArrayList<>();
+
+        for (int i = numPedras; i >= 1; i--) {
+            pedras.add(i);
+        }
 
         while (!pedras.isEmpty()) {
             deslocamentos++;
             int capacidadeAtual = 0;
-            List<Integer> novasPedras = new ArrayList<Integer>();
+            List<Integer> novasPedras = new ArrayList<>();
 
-            for (int pedraId = 0; pedraId < pedras.size(); pedraId++){
-                int pesoPedra = pedras.get(pedraId);
-                if (capacidadeAtual + pesoPedra <= capacidadeCaminhao) {
-                    capacidadeAtual += pesoPedra;
+            for (int peso : pedras) {
+                if (capacidadeAtual + peso <= capacidadeCaminhao) {
+                    capacidadeAtual += peso;
                 } else {
-                    novasPedras.add(pesoPedra);
+                    novasPedras.add(peso);
                 }
             }
 
             pedras = novasPedras;
         }
 
-        System.out.println(deslocamentos);
+        return deslocamentos;
     }
 }
