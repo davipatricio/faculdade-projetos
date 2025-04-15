@@ -1,6 +1,6 @@
 # Atividade Parcial 02
 
-Matéria: **Algoritmos e Estrutura de Dados**
+Matéria: **Análise e Projeto de Algoritmos**
 
 Professor: **Odair Gabriel**
 
@@ -8,7 +8,7 @@ Aluno: **Davi Patricio Gimenes** (2401557)
 
 Turma: **CC 3A / manhã**
 
-Classroom: [aqui](https://classroom.google.com/c/NzQ3NTY3NjY0MTgz/a/Njk4OTg2MDk5NDk2/details)
+Classroom: [aqui](https://classroom.google.com/c/NzQ3NTY4MDY5Njky/a/Njk4OTM2NTg5MTA5/details)
 
 ---
 
