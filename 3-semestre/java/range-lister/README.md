@@ -16,13 +16,15 @@ Classroom: [aqui](https://classroom.google.com/c/NzQ3NTY3NjY0MTgz/a/Njk4OTg2MDk5
 É um algoritmo que gera um intervalo numérico. Ele cria uma lista numérica sequencial entre dois limites (lower e upper).
 
 ## 2. O que ele faz?
-Ele cria e imprime uma lista contendo todos os números inteiro entre o minimo e o máximo inserido, incrementando a cada iteração.
+O algortimo gera um intervalo de números inteiros entre dois valores, `min` e `max`.
+O método `makeRange` primeiro cria um array vazio com tamanho predefinido, baseado na diferença entre `max` e `min`.
+Em seguida, em cada iteração do laço, o valor de min é **incrementado e adicionado ao array**, preenchendo-o com os números no intervalo.
 
-**Exemplos:**
+Ao executar o código, onde min é 1 e max é 10, o array resultante é impresso no console, asaída do programa é:
 
-- se chamar makeRange(6, 10), ele vai gerar: `[6, 7, 8, 9, 10]`
-
--  se chamar makeRange(-5, 0), ele vai gerar: `[-5,-4,-3,-2,-1,0]`
+```
+The array: [ 1 2 3 4 5 6 7 8 9 10 ]
+```
 
 ---
 
