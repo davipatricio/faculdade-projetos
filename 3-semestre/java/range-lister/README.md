@@ -34,4 +34,7 @@ O pesudo-código está disponível [aqui](pseudo-codigo.md).
 
 ## 4. Refatore o código
 
-O código refatorado está disponível [aqui](src/main/java/org/example/RefactoredRangeLister.java)
+Optei por refatorar o código duas vezes, sendo uma usando ArrayLists do Java, e outra em Python.
+
+- **Java**:  [aqui](src/main/java/org/example/RefactoredRangeLister.java)
+- **Python**: [aqui](refatoracao-python/range-lister.py)
