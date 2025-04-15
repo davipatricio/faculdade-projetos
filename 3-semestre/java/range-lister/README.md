@@ -30,7 +30,9 @@ The array: [ 1 2 3 4 5 6 7 8 9 10 ]
 
 ## 3. Estrutura algoritmo (pseudo-código)
 
-O pesudo-código está disponível [aqui](pseudo-codigo.md).
+Optei por fazer dois tipos de pseudo-código:
+- [conforme o exemplo do professor](pseudo-codigos/1.md)
+- [totalmente por escrito](pseudo-codigos/2.md)
 
 ## 4. Refatore o código
 
