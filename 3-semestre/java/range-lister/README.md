@@ -1,3 +1,17 @@
+# Atividade Parcial 02
+
+Matéria: **Algoritmos e Estrutura de Dados**
+
+Professor: **Odair Gabriel**
+
+Aluno: **Davi Patricio Gimenes** (2401557)
+
+Turma: **CC 3A / manhã**
+
+Classroom: [aqui](https://classroom.google.com/c/NzQ3NTY3NjY0MTgz/a/Njk4OTg2MDk5NDk2/details)
+
+---
+
 ## 1. Qual tipo de algoritmo?
 É um algoritmo que gera um intervalo numérico. Ele cria uma lista numérica sequencial entre dois limites (lower e upper).
 
