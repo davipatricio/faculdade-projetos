@@ -1,0 +1,28 @@
+Início
+
+    Função makeRange(min, max)
+        // Cria um array de inteiros com tamanho definido pela diferença entre max e min
+        Crie um array vazio chamado "range" com tamanho (max - min + 1)
+        
+        Para cada índice "i" de 0 até o tamanho de "range" - 1, execute
+            Atribua o valor de min à posição range[i]
+            Incrementar min em 1
+        Fim
+        
+        Retorne o array "range"
+    Fim
+
+    Função principal()
+        Chame a função makeRange(min, max), passando 1 como primeiro argumento e 10 como segundo argumento
+        Armazene o retorno em um array chamado "range"
+        
+        Imprima "The array: [ "
+        
+        Para cada valor em range, execute
+            Imprima o valor seguido de um espaço
+        Fim para
+        
+        Imprima "]"
+    Fim
+
+Fim
